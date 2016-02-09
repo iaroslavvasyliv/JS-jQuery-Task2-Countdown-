@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Таймер зворотнього відліку</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<main class="countdown-wrapper">
+		<p class="error-message">*Будь ласка, введіть одну або дві цифри в одне поле</p>
+		<p class="set-periods">
+			<input type="text" placeholder="дд" maxlength="2" class="set-period set-days">
+			<input type="text" placeholder="гг" maxlength="2" class="set-period set-hours">
+			<input type="text" placeholder="хх" maxlength="2" class="set-period set-mins">
+			<input type="text" placeholder="сс" maxlength="2" class="set-period set-secs">
+		</p>
+		<button class="btn-start" onclick="stopTimer(); startTimer();">Почати</button>
+		<section class="timer">
+			<span class="period days"></span>
+			<span class="period hours"></span>
+			<span class="period mins"></span>
+			<span class="period secs"></span>
+			<p class="byline">
+				<span class="period-text">Днів</span>
+				<span class="period-text">Годин</span>
+				<span class="period-text">Хвилин</span>
+				<span class="period-text">Секунд</span>
+			</p>
+			
+		</section>
+	</main>
+	<!-- Modal -->
+	<div class="modal">
+		<div class="modal-body">
+			<p>Time is up!</p>
+		</div>
+	</div>
+</body>
+</html>

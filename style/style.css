@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.error-message {
+    position: absolute;
+	display: none;
+    color: #f62;
+    font-weight: 700;
+    width: 472px;
+    margin: 0 auto;
+    top: -20px;
+}
+.countdown-wrapper {
+	position: relative;
+    width: 412px;
+    margin: 100px auto 0;
+    background: #334;
+    padding: 30px;
+}
+.set-periods {
+	width: 100%;
+	margin: 0 auto;
+}
+.set-period,
+.period,
+.period-text {
+    display: inline-block;
+    width: 60px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 10px;
+    border: 0;
+}
+.set-period {
+	height: 30px;
+}
+.period {
+    color: #fff;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 60px;
+}
+.period-text {
+    font-size: 16px;
+}
+.btn-start {
+	display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 35px;
+    margin: 10px auto 20px;
+    background: #6ce;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.timer {
+	display: none;
+}
+.byline {
+	color: #fff;
+	display: block;
+    margin-top: 10px;
+}
+.days  { background: #f76; }
+.hours { background: #49f; }
+.mins  { background: #3d7; }
+.secs  { background: #fd4; }
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+}
+.modal-body {
+    background: #f77;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    width: 25%;
+    margin: 10% auto;
+    padding: 15px;
+}
